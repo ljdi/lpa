@@ -13,7 +13,6 @@
   (dolist (binding bindings)
     (let* ((keys (lpa--ensure-list (car binding)))
            (def (cdr binding)))
-      (message "--------------def: %s" def)
       (dolist (key keys)
 	(define-key keymap (kbd key) def)))))
 
